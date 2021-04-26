@@ -5,13 +5,20 @@ export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   classes?: string
 }
 
-export const Card: FC<CardProps> = ({ variant = 'elevation', children, classes, ...rest }) => {
+export const Card: FC<CardProps> = ({
+  variant = 'elevation',
+  children,
+  classes,
+  ...rest
+}) => {
   return (
     <div
       className={[
         classes,
         'rounded-xl p-2',
-        `${variant === 'elevation' ? 'shadow-md' : 'border-2 border-solid'}`,
+        `${
+          variant === 'elevation' ? 'shadow-xl border' : 'border-2 border-solid'
+        }`,
       ].join(' ')}
       {...rest}
     >
