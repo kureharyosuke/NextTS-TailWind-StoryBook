@@ -37,7 +37,7 @@ export const Button: React.FC<ButtonProps> = ({
   ) : (
     <button
       type="button"
-      className={`text-gray-600 bg-transparent bg-pink-500 shadow-inner ${baseButton} ${sizeMode}`}
+      className={`text-gray-600 bg-transparent bg-pink-400 shadow-inner ${baseButton} ${sizeMode}`}
       style={{ backgroundColor }}
       {...props}
     >

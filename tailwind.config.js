@@ -1,5 +1,7 @@
-// const colors = require('tailwindcss/colors')
-import colors from "tailwindcss/colors";
+// import colors from 'tailwindcss / colors'
+// import colors from "tailwindcss/colors";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
