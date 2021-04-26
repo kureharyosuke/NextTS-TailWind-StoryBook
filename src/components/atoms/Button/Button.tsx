@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 export interface ButtonProps {
-  primary?: boolean;
-  backgroundColor?: string;
-  size?: 'small' | 'medium' | 'large';
-  label: string;
-  onClick?: () => void;
+  primary?: boolean
+  backgroundColor?: string
+  size?: 'small' | 'medium' | 'large'
+  label: string
+  onClick?: () => void
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -15,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
   label,
   ...props
 }) => {
-  const baseButton = 'rounded-full font-bold';
+  const baseButton = 'rounded-full font-bold'
   const sizeMode =
     size === 'small'
       ? 'py-1.5 px-4 text-xs'
@@ -23,13 +23,14 @@ export const Button: React.FC<ButtonProps> = ({
       ? 'py-2 px-5 text-sm'
       : size === 'large'
       ? 'py-3 px-6 text-base'
-      : '';
+      : ''
   return primary ? (
     <div>
       <button
         type="button"
         className={`text-white bg-gray-600 ${baseButton} ${sizeMode}`}
-        {...props}>
+        {...props}
+      >
         {label}
       </button>
     </div>
@@ -38,8 +39,9 @@ export const Button: React.FC<ButtonProps> = ({
       type="button"
       className={`text-gray-600 bg-transparent bg-pink-500 shadow-inner ${baseButton} ${sizeMode}`}
       style={{ backgroundColor }}
-      {...props}>
+      {...props}
+    >
       {label}
     </button>
-  );
-};
+  )
+}
