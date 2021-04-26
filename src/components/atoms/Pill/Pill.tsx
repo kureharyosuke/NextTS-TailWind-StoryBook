@@ -25,11 +25,7 @@ export const Pill: FC<PillProps> = ({
 
   return (
     <div
-      className={[
-        classes,
-        'rounded-xl inline-block text-sm',
-        `${sizeMap[size]}`,
-      ].join(' ')}
+      className={[classes, 'rounded-xl inline-block text-sm', `${sizeMap[size]}`].join(' ')}
       style={{ background: `${backgroundColor}` }}
     >
       <span style={{ color: `${textColor}` }}>{text}</span>

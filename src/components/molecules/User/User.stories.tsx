@@ -5,8 +5,7 @@ import { User, UserProps } from './User'
 const UserMockData = {
   id: 1,
   fullName: 'Luke Skywalker',
-  imgUrl:
-    'https://pbs.twimg.com/profile_images/1173120083553484800/oyQ6z42t_400x400.jpg',
+  imgUrl: 'https://pbs.twimg.com/profile_images/1173120083553484800/oyQ6z42t_400x400.jpg',
   occupation: 'Developer',
 }
 
